@@ -1,0 +1,380 @@
+\documentclass[a4paper,12pt,oneside,final]{extbook}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage[english,swedish]{babel}
+
+\usepackage{geometry}
+
+\geometry{
+ margin=20mm
+} 
+
+\usepackage{fancyhdr}
+
+\usepackage{titling}
+\title{Individuell rapport, TNM094}
+\author{Gustaf Wallström\\Spel på telefon-HMD}
+
+\frenchspacing
+\setlength{\parindent}{0pt}
+\parskip 5pt
+
+\usepackage{color}
+\definecolor{rltred}{rgb}{.5,0,0}
+\definecolor{rltgreen}{rgb}{0,.5,0}
+\definecolor{rltblue}{rgb}{0,0,1}
+
+\usepackage[pdftex,
+ colorlinks=true,
+ urlcolor=rltblue,       % \href{...}{...} external (URL)
+ filecolor=rltgreen,     % \href{...} local file
+ linkcolor=rltred,       % \ref{...} and \pageref{...}
+ citecolor=rltgreen,     % \cite{...}
+ pdftitle={},
+ pdfauthor={},
+ pdfsubject={Projektrapport, TNM094},
+ pdfkeywords={},
+ pdfpagemode=,
+ pdfstartview=FitH,
+ bookmarks=true,
+ bookmarksopen=false,
+ bookmarksnumbered=true
+        ]{hyperref}
+
+
+\begin{document}
+
+\pagestyle{empty}
+\thispagestyle{empty}
+
+\frontmatter
+
+\maketitle
+
+\pagestyle{fancy}
+
+\chapter{Sammanfattning}
+
+En sammanfattning ska kort och koncist beskriva och motivera det
+studerade problemet, metoden samt resultat och slutsatser. Arbetets
+bidrag till huvudområdet ska tydligt framgå. Vad är det rapporten
+säger om huvudområdet som vi inte visste tidigare?
+
+Sammanfattningens längd växer med längden på rapporten. I en rapport
+av denna typ kan den vara tre stycken lång: ett inledande motiverar
+arbetet och beskriver bakgrund, ett beskriver redogörelsen och ett
+beskriver analys och slutsatser. Sammanfattningen innehåller inga
+referenser eller ekvationer.
+
+
+\tableofcontents
+
+\cleardoublepage
+% \phantomsection
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+
+\cleardoublepage
+% \phantomsection
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+
+\mainmatter
+
+\chapter{Inledning}
+\label{ch:inledning}
+
+Inledningen presenterar rapportens grund för läsaren och ska därför
+behandla: motivering, syfte, frågeställning och avgränsning.
+
+
+\section{Bakgrund}
+
+Vid behov kan man här \emph{kort} presentera vad som motiverade
+arbetet. Alternativt läggs det som del av nästa avsnitt, ``syfte''.
+
+
+\section{Syfte}
+
+Den här rapporten speglar hur ett grupparbete kan planeras, struktureras och utföras. Alla slutsatser och antaganden kommer ursprungligen från 
+
+\section{Frågeställning}
+
+Här ska de specifika frågeställningarna beskrivas. Det ska vara
+regelrätta frågor som avslutas med frågetecken. Frågorna ska besvaras
+i slutsatser-kapitlet, eller så ska det anges varför de inte kunde
+besvaras. Ofta kommer en rapport att innehålla flera olika
+frågeställningar som hänger ihop. I vanliga fall brukar det vara två
+till fyra frågor.
+
+Exempel på frågeställningar för den individuella rapporten i TNM094
+(generaliserade):
+
+\begin{itemize}
+\item Kan man använda utnyttja tekniken X i ett projekt om Y för att
+  få effekten Z?
+\item Hur kan ett system (eller en lösning) för X realiseras så att
+  effekten Y uppstår?
+\item Vilka alternativ finns för att åstadkomma X och vilket
+  alternativ ger bäst effekt avseende Y och Z?  (Denna frågeställning
+  bryts lämpligtvis ner i två separata frågor.)
+\end{itemize}
+
+Observera att en specifik frågeställning nästan alltid ger ett bättre
+arbete än en generell frågeställning (det är helt enkelt mycket
+svårare att göra något vettigt av en generell frågeställning). Det är
+också fördelaktigt att inte bara skriva frågan, utan förtydliga i ett
+par meningar vad som menas med frågan och hur den kan besvaras.
+
+Det bästa sättet att få till en riktigt bra och specifik
+frågeställning är att göra en noggrann teorigenomgång och sätta sig in
+i relaterad forskning och praktik. Då får man idéer och terminologi på
+köpet vilket gör att man kan uttrycka sig precist och även ha något
+vettigt att säga i diskussionen. Och har man väl hittat fram till en
+detaljerad frågeställning så blir det lättare att arbeta sig fram till
+en bra metod och man kan genomföra själva arbetet mycket snabbare än
+om man jobbar med vaga formuleringar. Det brukar alltså löna sig i
+längden att lägga lite extra tid i början på att göra en ordentlig
+teorigenomgång.
+
+Handledaren är behjälplig med att bedöma när frågeställningen är
+tillräckligt specifik.
+
+
+\section{Avgränsningar}
+
+Här beskrivs kortfattat de viktigaste avgränsningar som medvetet
+gjorts. Det kan till exempel gälla att man fokuserat arbetet på en
+viss tillämpningsdomän eller målgrupp. I normalfallet behöver
+avgränsningarna inte motiveras.
+
+
+\chapter{System och tekniska lösningar}
+
+Här beskrivs systemet som ska byggas i projektet, dess delar och hur
+det ska byggas samman. Eftersom den individuella rapporten behandlar
+projektet i ett tidigt skede så kommer mycket vara spekulativt, men
+bör ändå vara realistiskt och välmotiverat.
+
+För att underlätta lärarent bedömning: Tag bort eller flytta runt
+avsnitten inom kapitelet, om men endast om det är nödvändigt för det
+specifika projektet, men flytta inte avsnitt mellan kapitel och byt
+heller inte titel på avsnitt eller kapitel.
+
+Glöm inte att motivera era val utifrån projektets behov och referera
+till eventuella källor.
+
+\section{Grundläggande, initiala krav och systembegränsningar}
+
+Beskrivning av systemets mål och vilka grundläggande krav som sätts
+för att detta mål ska anses uppfyllt. Här diskuteras även
+grundläggande systembegräsningar såsom hur många användare som ska
+kunna nyttja systemet samtidigt, eller hur lång svarstid systemet får
+ha för att anses fylla målet.
+
+\section{Målplattform}
+
+Beskrivning av målplattformen och hur t ex tredje-part-programvara
+används för att underlätta stödet för eller utvecklingen till
+målplattformen.
+
+\section{Grundläggande system-arkitektur}
+
+Beskrivning av systemets grundläggande arkitektur, både interna och
+externa komponenter och noder, hur de viktigaste systemdelarna i sig
+delas upp i moduler med specifika uppgifter, systemets interna
+modulers programspråk, behov av ramverk som stödjer denna
+system-arkitektur eller definierar och bygger upp den.
+
+\section{Standarder}
+
+Här beskrivs de standarder som systemet behöver följa, såsom
+filformat, protokoll eller andra gränssnitt. Beskriv också vilka
+tredjeparts-bibliotek som kommer att användas för att göra detta.
+
+\section{Utvecklings-miljö}
+
+Här beskrivs de verktyg som ska användas i utvecklingen, såsom IDE, kompilator, debug-verktyg, profileringsverktyg, etc.
+
+\chapter{Projekthantering}
+
+Här beskrivs de övergripande teknikerna som övervakar och styr
+samarbetet inom projektet.
+
+\section{Utvecklingsmetodik}
+
+Beskriv och motivera här den övergripande strukturen,
+utvecklingsmetodiken eller metodikerna, som valts för projektet. Här
+ska bara grundläggande principer och motivering diskuteras. Detaljer
+diskuteras och motiveras under respektive avsnitt.
+
+\section{Organisation}
+
+Här beskrivs vilka som ingår i projektet, både utvecklare och externa
+intressenter, deras ansvarsfördelning (och eventuellt hur den är
+planerad att förändras över tid) och eventuella arbetsgrupper och
+vilka syften och uppgifter dessa har.
+
+\section{Tidsplan}
+
+Beskriv, diskutera och motivera tidsplan för hela projektet, sprints,
+möten och milestones, inklusive tid för planering och leverans.
+
+\section{Milestones och leverabler}
+
+Mer detaljerad beskrivning och motivering av milestones och
+leverabler, såsom rapporter, prototyper och färdigt system.
+
+\chapter{Rutiner och principer}
+
+I det här kapitlet beskrivs de rutiner och principer som används av
+alla inom projektet för att säkerställa ett fungerande samarbete och
+rätt kvalitet på utveckling och slutprodukt.
+
+\section{Mötesprinciper och rutiner}
+
+Beskriv vilka typer av möten gruppen kommer att ha och hur dessa ska
+gå till.
+
+\section{Kravhantering och -spårning}
+
+Beskriv hur gruppen arbetar med kravhantering och eventuellt även
+kravspårning och vilket teknikstöd som kommer att användas. Med
+kravspårning avses processer, rutiner och dokumentation som syftar i att
+ge full kontroll över hur varje enskilt krav implementeras i
+systemarkitektur, programdesign, programkod, enhetstest,
+integrationstest och systemtest.
+
+Här beskrivs också hur projektet säkerställer synkronisering mellan
+intressenternas behov och genomförandet.
+
+\section{Versionshantering, -system och rutiner}
+
+Beskriv hur gruppen arbetar med versionshantering och vilket
+teknikstöd som kommer att användas.
+
+\section{Arkitektur- och programdesign, standarder och rutiner}
+
+Beskriv hur gruppen arbetar med arkitektur och programdesign.
+
+\section{Dokumentationsprinciper och rutiner}
+
+Beskriv hur gruppen arbetar med dokumentation av programkod men även
+möten och andra delar av utvecklingsprocessen och vilket teknikstöd
+som kommer att användas.
+
+\section{Kvalitetssäkring}
+
+Beskriv hur gruppen arbetar med kvalitetssäkring av programkod
+(granskning och testning) och vilket teknikstöd som kommer att
+användas.
+
+\chapter{Analys och diskussion}
+
+Det är här ni analyserar och diskuterar arbetet. I diskussionskapitlet
+ska man explicit referera till både andra avsnitt i rapporten och
+externa källor som är relevanta för diskussionen.
+
+
+\section{Resultat}
+
+Finns det något i resultaten som står ut och behöver analyseras och
+kommenteras? Vad säger teorin om vad resultaten egentligen betyder?
+Finns det något i resultaten som är oväntat baserat på teori och andra
+källor, eller stämmer det bra överens med vad man teoretiskt kunde
+förvänta sig?
+
+\section{Arbetet i ett vidare sammanhang}
+
+Det ska ingå ett stycke med en diskussion om etiska och samhälleliga
+aspekter relaterade till arbetet. Detta är viktigt för att påvisa
+professionell mognad samt för att utbildningsmålen ska kunna
+uppnås. Om arbetet av någon anledning helt saknar koppling till etiska
+eller samhälleliga aspekter ska detta explicit anges i stycket
+Avgränsningar i inledningskapitlet.
+
+Exempel på samhälleliga eller etiska aspekter är människors liv och
+hälsa, samhällets funktionalitet, demokrati, rättssäkerhet och
+mänskliga fri- och rättigheter, miljö och ekonomiska värden samt
+nationell suveränitet. Inom planering av/och systemutveckling kan det
+exempelvis handla om arbetsbelastning, ekonomisk kompensation,
+uppdelning mellan arbetstid och fritid, könsdiskriminering eller annan
+form av diskriminering, programvarans användning i terrorism,
+kärnvapen, miljökopplad industri eller demokratisk utveckling.
+
+
+\chapter{Slutsatser}
+
+I detta kapitel ska en återkoppling till syfte och frågeställningar
+ske. Har syftet uppnåtts och vad blev svaret på frågeställningarna?
+Varje frågeställning kan få ett eget avsnitt för att tydliggöra
+strukturen.
+
+Här ska också arbetets konsekvenser för berörd målgrupp och eventuellt
+för forskare och praktiker beskrivas. Man kan också ha ett stycke
+eller avsnitt om framtida arbete där man beskriver vad man skulle
+vilja göra om man hade mer tid eller som rekommendationer för framtida
+studier eller exjobb. Om man har ett sådant stycke är det dock viktigt
+att det är konkreta och väl genomtänkta förslag som presenteras,
+snarare än vaga idéer.
+
+
+\begin{thebibliography}{99}
+\addcontentsline{toc}{chapter}{\bibname}
+
+\bibitem{pfleeger10softwareengineering}
+  Shari Lawrence Pfleeger och Joanne M. Atlee, \emph{Software Engineering, Fourth Edition, International Edition}, Pearson 2010
+
+\bibitem{ngnblog} Författare, \emph{Titel}, Organisation, yyyy-mm-dd, hämtad: yyyy-mm-dd\newline http://länk/till/sidan
+
+\end{thebibliography}
+
+
+\appendix
+
+\chapter{Bilaga}
+
+Efter \textbackslash appendix placeras kapitel som ska behandlas som
+appendix. Dessa innehåller delar av rapporten som inte är viktiga för
+att kunna ta till sig innehållet, men som ändå är kopplade till
+arbetet. Exempel är arbetsfördelningen inom projektet eller site-karta
+och skärmdumpar från ett webbsystem som utvecklades inom projektet.
+
+
+\chapter{Allmänt om språkbruk}
+
+Det finns många guider för språkbruket i rapporter, artiklar och konferensbidrag. Några exempel 
+\begin{itemize}
+\item Enkla språkregler, Studieverkstan, Högskolan i Skövde, 2014-11-03, hämtad 2014-12-10\newline
+  \href{http://www.his.se/Ar-student/Studievagledning/studieverkstan/Enkla-sprakregler/}%
+       {http://www.his.se/Ar-student/Studievagledning/studieverkstan/Enkla-sprakregler/}
+\item Akademiskt skrivande, Mikael Nygård, Åbo Akademi, hämtad 2014-12-10\newline
+  \href{http://www.vasa.abo.fi/users/minygard/Tips2-filer/Akademiskt\%20skrivande2.htm}%
+       {http://www.vasa.abo.fi/users/minygard/Tips2-filer/Akademiskt\%20skrivande2.htm}
+\item Språkguider, Linköpings universitet\newline
+  \href{https://old.liu.se/insidan/kommunikationsstod/sprakguider/sprakguider?l=sv\&sc=true}%
+       {https://old.liu.se/insidan/kommunikationsstod/sprakguider/sprakguider?l=sv\&sc=true}
+\end{itemize}
+För att undvika några vanliga fallgropar:
+\begin{itemize}
+\item Börja med innehållet, vad är det rapporten handlar om? Tekniker
+  såsom \emph{brainstorming} och \emph{mind map} är bra verktyg som är
+  väl värda den tid det tar att lära sig.
+\item Strukturen är mycket viktig --- läsaren ska handledas genom
+  teorier och deras förståelse byggas upp som ett korthus, från grund
+  till topp. Genom att börja något under den nivå man tror att läsaren
+  ligger på så säkerställer man att läsaren och författarna har en
+  gemensam förståelse för vad som presenteras senare.
+\item Använd styckesindelning och försök skapa ett flöde genom
+  texten. En bra strukturerad och formulerad text går att läsa och
+  förstå hur den är strukturerad även om man tar bort kapitel och
+  rubriker.
+\end{itemize}
+
+
+\end{document}
+
